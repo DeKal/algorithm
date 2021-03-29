@@ -1,0 +1,28 @@
+.box {
+  min-height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+  background-color: tomato;
+  display: block;
+}
+.box .box {
+  border: 1px solid green;
+  background-color: lightgreen;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
